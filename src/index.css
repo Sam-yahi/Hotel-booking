@@ -1,0 +1,47 @@
+@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;  
+*{
+    margin: 0;
+    padding: 10;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-icon {
+  transition: transform 0.3s ease; /* Animate the transform property */
+}
+
+.search-container.open .search-icon {
+  transform: rotate(90deg); /* Rotate the icon when the container is 'open' */
+}
+#featured{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: black 1px solid;
+  padding: 10px 15px;
+  border-radius: 5px;
+
+}
+
+/* Marquee scroll animation */
+@keyframes marqueeScroll {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.marquee-inner {
+  display: flex;
+  animation: marqueeScroll 25s linear infinite;
+}
+
+.marquee-reverse {
+  animation-direction: reverse;
+}

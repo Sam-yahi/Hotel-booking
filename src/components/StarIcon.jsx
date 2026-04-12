@@ -1,5 +1,5 @@
 import React from 'react'
-import starFilled from '../assets/starIconfilled.svg';
+import starFilled from '../assets/starIconFilled.svg';
 import starOutlined from '../assets/starIconOutlined.svg';
 
 
